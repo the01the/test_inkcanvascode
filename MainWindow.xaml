@@ -1,0 +1,29 @@
+<Window x:Class="signwriter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:signwriter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <InkCanvas Name="InkCanvas" Grid.Row="0" Grid.Column="0"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="0">
+
+
+        </StackPanel>
+        <Button x:Name="OKButton"    Content="OK"          HorizontalAlignment="Left" Margin="488,30,0,0" Grid.Row="1" VerticalAlignment="Top" Click="btnSave_Click" Width="68" Height="19"/>
+        <Button x:Name="ClearButton" Content="ClearButton" HorizontalAlignment="Left" Margin="134,29,0,0" Grid.Row="1" VerticalAlignment="Top" Click="ClearButton_Click"/>
+        <Button x:Name="EraseButton" Content="EraseButton" HorizontalAlignment="Left" Margin="262,29,0,0" Grid.Row="1" VerticalAlignment="Top" Click="EraseButton_Click"/>
+        <Button x:Name="WriteButton" Content="WriteButton" HorizontalAlignment="Left" Margin="381,30,0,0" Grid.Row="1" VerticalAlignment="Top" Click="WriteButton_Click"/>
+    </Grid>
+</Window>
